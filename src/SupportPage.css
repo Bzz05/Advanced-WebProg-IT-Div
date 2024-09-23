@@ -1,0 +1,158 @@
+body{
+    color: white;
+}
+
+.container {
+    height: 55vh;
+    width: 65vw;
+    position: relative;
+}
+  
+.top{
+    height: 11%;
+    border-bottom: .5px solid white;
+}
+
+.mid{
+    height: 76%;
+}
+
+.left{
+    /* outline: .5px solid red; */
+    float: left;
+    width: 50%;
+    height: 100%;
+    
+}
+
+.left p{
+    margin-bottom: 5px;
+}
+
+.dotted-box {
+    font-size: 15px;
+    border: 1px dotted #ccc;
+    width: 80%;
+    border-radius: 2.5px;
+    height: 63px;
+    padding: 15px;
+}
+
+.dotted-box p{
+    margin: 0;
+}
+
+.dotted-box label {
+    display: block;
+}
+
+.dotted-box input[type="radio"] {
+    transform: scale(0.5); 
+    margin-right: 5px; 
+}
+
+.required {
+    color: red;
+}
+  
+.half-box{
+    outline: none;
+    width: 48%;
+    display: inline-block;
+    position: relative;
+}
+
+.email-box input{
+    width: 88%;
+    display: inline-block;
+    color: rgb(255, 255, 255, .8);
+    outline: none;
+    height: 25px;
+    border: 1px solid gray;
+    background-color: transparent;
+    border-radius: 4px;
+    margin-bottom: 13px;
+}
+  
+.half-box input{
+    color: rgb(255, 255, 255, .8);
+    outline: none;
+    height: 25px;
+    border: 1px solid gray;
+    background-color: transparent;
+    border-radius: 4px;
+    margin-bottom: 13px;
+}
+  
+.sub-label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 10px;
+    color: gray;
+}
+
+.box{
+    height: 100%;
+    outline: 1px solid white;
+}
+  
+.right{
+    /* outline: .5px solid cyan; */
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.container2{
+    height: 15%;
+    display: flex;
+    align-items: flex-start;
+}
+  
+.optional {
+    color: gray; 
+    font-size: 12px;
+    margin-left: 2.5px;
+}
+  
+  
+.description-box {
+    border-radius: 5px;
+    color: rgb(255, 255, 255, .8);
+    background-color: transparent;
+    width: 90%;
+    box-sizing: border-box;
+    height: 85%;
+    resize: none;
+    font-family: 'Arial';
+  }
+  
+.bot{
+    margin-top: 15px;
+    height: 13%;
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+    /* outline: 1px solid brown; */
+}
+
+.submit-btn.gray-bg {
+    background-color: #ccc; 
+    color: #fff;
+    padding: 15px 30px;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .submit-btn.orange-bg {
+    background-color: #dd6b20; 
+    color: #fff;
+    padding: 15px 30px;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+  }

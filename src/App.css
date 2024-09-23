@@ -1,0 +1,157 @@
+body {
+  background-color: black;
+  margin: 0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.output-box {
+  width: 300px;
+  background-color: #5a5a5a;
+  border-radius: 7px;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  overflow: hidden;
+}
+
+.history-box {
+  width: 40%;
+  padding: 10px;
+  height: 50px;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(207, 201, 201, 0.75);
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    text-align: center;
+  }
+}
+
+.history-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.current-input {
+  padding: 10px;
+  min-height: 30px;
+  text-align: right;
+}
+
+.number-operator-box {
+  display: grid;
+  color: white;
+  grid-template-columns: repeat(4, 4rem); 
+  gap: 10px; 
+}
+
+.number-operator-box .gray,
+.number-operator-box .question,
+.number-operator-box .yellow{
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+
+.link-btn{
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.number-operator-box .question{
+  color: #fff;
+  background-color: rgb(151, 98, 28);
+}
+
+.number-operator-box .gray{
+  background-color: rgb(162, 162, 162);
+}
+
+.span-two-zero {
+  font-size: 1.25rem;
+  font-weight: bold;
+  grid-column: span 2;
+  color: white;
+  cursor: pointer;
+  border-radius: 25px; 
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: rgb(162, 162, 162);
+}
+
+.span-two-equal{
+  font-size: 1.25rem;
+  font-weight: bold;
+  grid-column: span 2;
+  cursor: pointer;
+  color: white;
+  border-radius: 25px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: #ffa500;
+}
+
+.number-operator-box .yellow{
+  background-color: #ffa500;
+}
+
+/* 
+.number-operator-box button {  
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #ffa500;
+  color: #fff;
+}
+
+.number-operator-box button .orange{
+  height: 70%;
+  width: 93%;
+  grid-column: span 2;
+  border:2px solid white;
+  border-radius: 35px;
+  place-content: unset;
+  align-items: center;
+  cursor: pointer;
+}
+
+.number-operator-box button .gray {
+  background-color: rgb(162, 162, 162);
+} */
